@@ -1,0 +1,171 @@
+=============
+[2026-06-10T00:41:59+08:00] tiny  (exit=0, duration=637s)
+Backend:           zoo-htp coop (PROMPT_FA=1, pipeline=false, antithetic=false)
+Model:             /data/local/tmp/gguf/TinyLlama-1.1B-Chat-v1.0-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/Tiny-lora.gguf
+Steps:             300
+--- last 50 lines of run-tiny.log ---
+  serial prep: plus=78.989 ms minus=75.831 ms update=78.503 ms | push: plus=16.149 ms minus=15.327 ms
+step 286/300: loss_plus=3.747128 loss_minus=3.281613 loss_delta=4.65514421e-01 g=2.32757225e+01 | t_pp_plus=657.474 ms t_pp_minus=655.125 ms | step=1582.494 ms
+  serial prep: plus=79.003 ms minus=79.151 ms update=76.797 ms | push: plus=16.140 ms minus=16.155 ms
+step 287/300: loss_plus=4.283104 loss_minus=4.159907 loss_delta=1.23197079e-01 g=6.15985394e+00 | t_pp_plus=669.389 ms t_pp_minus=657.154 ms | step=1589.440 ms
+  serial prep: plus=75.594 ms minus=75.633 ms update=78.459 ms | push: plus=15.261 ms minus=15.264 ms
+step 288/300: loss_plus=3.321451 loss_minus=3.656996 loss_delta=-3.35545540e-01 g=-1.67772770e+01 | t_pp_plus=1053.230 ms t_pp_minus=1063.470 ms | step=2382.094 ms
+  serial prep: plus=78.848 ms minus=75.793 ms update=76.601 ms | push: plus=16.147 ms minus=15.295 ms
+step 289/300: loss_plus=4.125501 loss_minus=4.359744 loss_delta=-2.34242916e-01 g=-1.17121458e+01 | t_pp_plus=1051.067 ms t_pp_minus=1063.509 ms | step=2380.164 ms
+  serial prep: plus=75.564 ms minus=79.081 ms update=76.764 ms | push: plus=15.316 ms minus=16.190 ms
+step 290/300: loss_plus=2.801840 loss_minus=3.199152 loss_delta=-3.97311687e-01 g=-1.98655853e+01 | t_pp_plus=1051.118 ms t_pp_minus=1051.239 ms | step=2369.490 ms
+  serial prep: plus=75.548 ms minus=79.039 ms update=78.488 ms | push: plus=15.291 ms minus=16.150 ms
+step 291/300: loss_plus=3.185499 loss_minus=3.084084 loss_delta=1.01414919e-01 g=5.07074594e+00 | t_pp_plus=1049.228 ms t_pp_minus=1035.981 ms | step=2350.413 ms
+  serial prep: plus=78.807 ms minus=75.607 ms update=76.660 ms | push: plus=16.125 ms minus=15.275 ms
+step 292/300: loss_plus=2.684857 loss_minus=3.469461 loss_delta=-7.84604073e-01 g=-3.92302055e+01 | t_pp_plus=666.785 ms t_pp_minus=655.414 ms | step=1589.474 ms
+  serial prep: plus=75.544 ms minus=79.078 ms update=78.526 ms | push: plus=15.312 ms minus=16.196 ms
+step 293/300: loss_plus=5.005817 loss_minus=6.853394 loss_delta=-1.84757662e+00 g=-9.23788300e+01 | t_pp_plus=920.963 ms t_pp_minus=911.791 ms | step=2098.146 ms
+  serial prep: plus=78.892 ms minus=75.668 ms update=76.627 ms | push: plus=16.174 ms minus=15.329 ms
+step 294/300: loss_plus=2.595069 loss_minus=3.370443 loss_delta=-7.75374413e-01 g=-3.87687225e+01 | t_pp_plus=786.959 ms t_pp_minus=787.856 ms | step=1836.113 ms
+  serial prep: plus=75.583 ms minus=75.663 ms update=76.782 ms | push: plus=15.289 ms minus=15.266 ms
+step 295/300: loss_plus=3.689739 loss_minus=3.118176 loss_delta=5.71562290e-01 g=2.85781155e+01 | t_pp_plus=655.009 ms t_pp_minus=667.069 ms | step=1585.491 ms
+  serial prep: plus=75.603 ms minus=76.159 ms update=78.478 ms | push: plus=15.264 ms minus=15.306 ms
+step 296/300: loss_plus=6.124699 loss_minus=5.544366 loss_delta=5.80332279e-01 g=2.90166149e+01 | t_pp_plus=773.941 ms t_pp_minus=802.404 ms | step=1845.943 ms
+  serial prep: plus=78.898 ms minus=79.033 ms update=76.679 ms | push: plus=16.145 ms minus=16.205 ms
+step 297/300: loss_plus=4.617167 loss_minus=4.638923 loss_delta=-2.17566490e-02 g=-1.08783245e+00 | t_pp_plus=1063.278 ms t_pp_minus=1059.618 ms | step=2390.245 ms
+  serial prep: plus=75.580 ms minus=79.142 ms update=78.573 ms | push: plus=15.276 ms minus=16.161 ms
+step 298/300: loss_plus=2.749619 loss_minus=3.719857 loss_delta=-9.70237017e-01 g=-4.85118523e+01 | t_pp_plus=1450.388 ms t_pp_minus=1466.862 ms | step=3188.615 ms
+  serial prep: plus=78.915 ms minus=79.036 ms update=78.446 ms | push: plus=16.134 ms minus=16.147 ms
+step 299/300: loss_plus=5.368310 loss_minus=2.731394 loss_delta=2.63691640e+00 g=1.31845825e+02 | t_pp_plus=1059.860 ms t_pp_minus=1059.196 ms | step=2388.831 ms
+  serial prep: plus=78.951 ms minus=79.078 ms update=76.762 ms | push: plus=16.140 ms minus=16.146 ms
+step 300/300: loss_plus=5.166203 loss_minus=5.015009 loss_delta=1.51194096e-01 g=7.55970478e+00 | t_pp_plus=899.571 ms t_pp_minus=895.596 ms | step=2060.581 ms
+  serial prep: plus=75.500 ms minus=79.078 ms update=76.705 ms | push: plus=15.281 ms minus=16.175 ms
+
+summary:
+  dataset             = SST2
+  pipeline            = false
+  antithetic          = false
+  lora_exec           = fused-htp
+  train_time          = 633.877 s
+  speed_pp            = 139.08 t/s
+  total_pp_tokens     = 76992
+  avg_step_time       = 2112.922 ms
+  avg_t_pp_per_fwd    = 922.649 ms
+  avg_tokens_per_fwd  = 128.320
+  avg_prepare_plus    = 77.615 ms
+  avg_prepare_minus   = 77.937 ms
+  avg_prepare_update  = 77.735 ms
+  avg_push_plus       = 15.819 ms
+  avg_push_minus      = 15.865 ms
+  peak_pss_sampled    = -1 KiB
+
+=============
+[2026-06-10T01:13:03+08:00] llama  (exit=0, duration=1564s)
+Backend:           zoo-htp coop (PROMPT_FA=1, pipeline=false, antithetic=false)
+Model:             /data/local/tmp/gguf/Llama-3.2-3B-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/Llama-lora.gguf
+Steps:             300
+--- last 50 lines of run-llama.log ---
+  serial prep: plus=148.533 ms minus=148.328 ms update=150.374 ms | push: plus=29.710 ms minus=29.769 ms
+step 286/300: loss_plus=3.934137 loss_minus=4.255415 loss_delta=-3.21278095e-01 g=-1.60639057e+01 | t_pp_plus=1980.278 ms t_pp_minus=1966.430 ms | step=4480.186 ms
+  serial prep: plus=148.312 ms minus=155.417 ms update=158.443 ms | push: plus=29.795 ms minus=31.367 ms
+step 287/300: loss_plus=4.183232 loss_minus=3.605153 loss_delta=5.78079462e-01 g=2.89039745e+01 | t_pp_plus=1945.107 ms t_pp_minus=1958.870 ms | step=4429.234 ms
+  serial prep: plus=154.747 ms minus=148.503 ms update=150.514 ms | push: plus=31.373 ms minus=29.768 ms
+step 288/300: loss_plus=3.909526 loss_minus=4.025617 loss_delta=-1.16091490e-01 g=-5.80457449e+00 | t_pp_plus=2749.082 ms t_pp_minus=2749.089 ms | step=6027.496 ms
+  serial prep: plus=148.349 ms minus=156.130 ms update=153.655 ms | push: plus=29.744 ms minus=31.373 ms
+step 289/300: loss_plus=4.136177 loss_minus=4.570133 loss_delta=-4.33955669e-01 g=-2.16977844e+01 | t_pp_plus=2393.502 ms t_pp_minus=2386.202 ms | step=5317.742 ms
+  serial prep: plus=154.889 ms minus=155.619 ms update=153.992 ms | push: plus=31.373 ms minus=32.114 ms
+step 290/300: loss_plus=4.006346 loss_minus=4.135776 loss_delta=-1.29430294e-01 g=-6.47151470e+00 | t_pp_plus=2711.512 ms t_pp_minus=2692.348 ms | step=5932.329 ms
+  serial prep: plus=154.910 ms minus=148.423 ms update=153.701 ms | push: plus=31.448 ms minus=29.765 ms
+step 291/300: loss_plus=3.853630 loss_minus=3.733931 loss_delta=1.19699478e-01 g=5.98497391e+00 | t_pp_plus=2375.233 ms t_pp_minus=2372.423 ms | step=5280.457 ms
+  serial prep: plus=154.732 ms minus=154.814 ms update=150.263 ms | push: plus=31.388 ms minus=31.372 ms
+step 292/300: loss_plus=3.749729 loss_minus=3.860318 loss_delta=-1.10588551e-01 g=-5.52942753e+00 | t_pp_plus=1950.447 ms t_pp_minus=1937.665 ms | step=4414.190 ms
+  serial prep: plus=148.384 ms minus=155.671 ms update=150.360 ms | push: plus=29.756 ms minus=31.670 ms
+step 293/300: loss_plus=4.787506 loss_minus=4.790106 loss_delta=-2.59971619e-03 g=-1.29985809e-01 | t_pp_plus=2338.800 ms t_pp_minus=2253.389 ms | step=5117.332 ms
+  serial prep: plus=148.508 ms minus=154.973 ms update=150.441 ms | push: plus=29.688 ms minus=31.336 ms
+step 294/300: loss_plus=3.356171 loss_minus=3.245411 loss_delta=1.10760212e-01 g=5.53801060e+00 | t_pp_plus=1953.590 ms t_pp_minus=1964.839 ms | step=4347.748 ms
+  serial prep: plus=148.239 ms minus=131.714 ms update=91.100 ms | push: plus=29.755 ms minus=19.931 ms
+step 295/300: loss_plus=3.671541 loss_minus=3.720791 loss_delta=-4.92498875e-02 g=-2.46249437e+00 | t_pp_plus=1560.723 ms t_pp_minus=1550.602 ms | step=3564.655 ms
+  serial prep: plus=90.963 ms minus=148.598 ms update=153.817 ms | push: plus=19.956 ms minus=29.715 ms
+step 296/300: loss_plus=5.189552 loss_minus=4.797306 loss_delta=3.92245770e-01 g=1.96122894e+01 | t_pp_plus=2308.913 ms t_pp_minus=2285.533 ms | step=5066.281 ms
+  serial prep: plus=154.799 ms minus=154.899 ms update=90.918 ms | push: plus=31.409 ms minus=31.417 ms
+step 297/300: loss_plus=4.045731 loss_minus=4.826929 loss_delta=-7.81197548e-01 g=-3.90598793e+01 | t_pp_plus=2691.446 ms t_pp_minus=2700.518 ms | step=5846.529 ms
+  serial prep: plus=90.901 ms minus=149.008 ms update=153.668 ms | push: plus=19.910 ms minus=30.785 ms
+step 298/300: loss_plus=3.590913 loss_minus=4.131305 loss_delta=-5.40392160e-01 g=-2.70196095e+01 | t_pp_plus=3013.779 ms t_pp_minus=2981.026 ms | step=6454.076 ms
+  serial prep: plus=154.775 ms minus=90.986 ms update=153.813 ms | push: plus=31.386 ms minus=19.908 ms
+step 299/300: loss_plus=3.743362 loss_minus=4.170129 loss_delta=-4.26767111e-01 g=-2.13383560e+01 | t_pp_plus=2751.828 ms t_pp_minus=2749.404 ms | step=6028.863 ms
+  serial prep: plus=154.835 ms minus=148.473 ms update=152.725 ms | push: plus=31.374 ms minus=29.684 ms
+step 300/300: loss_plus=4.025291 loss_minus=4.726919 loss_delta=-7.01627731e-01 g=-3.50813866e+01 | t_pp_plus=2400.018 ms t_pp_minus=2359.468 ms | step=5248.446 ms
+  serial prep: plus=121.289 ms minus=154.969 ms update=150.668 ms | push: plus=20.154 ms minus=31.577 ms
+
+summary:
+  dataset             = SST2
+  pipeline            = false
+  antithetic          = false
+  lora_exec           = fused-htp
+  train_time          = 1554.969 s
+  speed_pp            = 47.92 t/s
+  total_pp_tokens     = 67264
+  avg_step_time       = 5183.230 ms
+  avg_t_pp_per_fwd    = 2339.294 ms
+  avg_tokens_per_fwd  = 112.107
+  avg_prepare_plus    = 144.625 ms
+  avg_prepare_minus   = 145.116 ms
+  avg_prepare_update  = 146.061 ms
+  avg_push_plus       = 29.375 ms
+  avg_push_minus      = 29.351 ms
+  peak_pss_sampled    = -1 KiB
+
+=============
+[2026-06-10T01:45:22+08:00] gemma  (exit=0, duration=1639s)
+Backend:           zoo-htp coop (PROMPT_FA=1, pipeline=false, antithetic=false)
+Model:             /data/local/tmp/gguf/gemma-3-4b-it-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/gemma-lora.gguf
+Steps:             300
+--- last 50 lines of run-gemma.log ---
+  serial prep: plus=244.541 ms minus=244.697 ms update=198.189 ms | push: plus=41.274 ms minus=41.483 ms
+step 286/300: loss_plus=2.976067 loss_minus=2.847550 loss_delta=1.28516436e-01 g=6.42582178e+00 | t_pp_plus=1984.421 ms t_pp_minus=2075.287 ms | step=4868.425 ms
+  serial prep: plus=194.650 ms minus=193.558 ms update=322.108 ms | push: plus=38.889 ms minus=38.708 ms
+step 287/300: loss_plus=3.599017 loss_minus=2.612339 loss_delta=9.86677885e-01 g=4.93338966e+01 | t_pp_plus=2029.306 ms t_pp_minus=2049.548 ms | step=4993.567 ms
+  serial prep: plus=245.052 ms minus=244.824 ms update=321.168 ms | push: plus=41.974 ms minus=41.332 ms
+step 288/300: loss_plus=3.587930 loss_minus=2.773957 loss_delta=8.13973427e-01 g=4.06986732e+01 | t_pp_plus=2687.378 ms t_pp_minus=2678.480 ms | step=6012.299 ms
+  serial prep: plus=244.277 ms minus=118.466 ms update=198.848 ms | push: plus=41.289 ms minus=26.034 ms
+step 289/300: loss_plus=3.391130 loss_minus=2.997838 loss_delta=3.93292427e-01 g=1.96646214e+01 | t_pp_plus=2365.984 ms t_pp_minus=2403.474 ms | step=5488.224 ms
+  serial prep: plus=194.462 ms minus=118.706 ms update=321.667 ms | push: plus=40.594 ms minus=26.088 ms
+step 290/300: loss_plus=2.947037 loss_minus=3.337888 loss_delta=-3.90851021e-01 g=-1.95425510e+01 | t_pp_plus=2420.132 ms t_pp_minus=2369.889 ms | step=5579.208 ms
+  serial prep: plus=244.389 ms minus=245.253 ms update=195.871 ms | push: plus=41.254 ms minus=41.583 ms
+step 291/300: loss_plus=2.085485 loss_minus=2.475175 loss_delta=-3.89690161e-01 g=-1.94845085e+01 | t_pp_plus=2418.422 ms t_pp_minus=2365.384 ms | step=5464.858 ms
+  serial prep: plus=193.210 ms minus=193.248 ms update=195.899 ms | push: plus=38.732 ms minus=38.742 ms
+step 292/300: loss_plus=2.062793 loss_minus=2.148937 loss_delta=-8.61446857e-02 g=-4.30723429e+00 | t_pp_plus=2010.298 ms t_pp_minus=2056.631 ms | step=4801.700 ms
+  serial prep: plus=193.378 ms minus=244.516 ms update=195.952 ms | push: plus=38.869 ms minus=41.279 ms
+step 293/300: loss_plus=3.779579 loss_minus=3.484398 loss_delta=2.95181036e-01 g=1.47590523e+01 | t_pp_plus=2218.907 ms t_pp_minus=2272.480 ms | step=5226.618 ms
+  serial prep: plus=193.377 ms minus=244.832 ms update=195.995 ms | push: plus=38.821 ms minus=41.373 ms
+step 294/300: loss_plus=2.168373 loss_minus=2.427752 loss_delta=-2.59379387e-01 g=-1.29689693e+01 | t_pp_plus=2048.057 ms t_pp_minus=2047.118 ms | step=4830.316 ms
+  serial prep: plus=193.567 ms minus=244.547 ms update=196.192 ms | push: plus=38.754 ms minus=41.279 ms
+step 295/300: loss_plus=2.162862 loss_minus=2.070717 loss_delta=9.21452045e-02 g=4.60726023e+00 | t_pp_plus=1844.719 ms t_pp_minus=1859.465 ms | step=4342.446 ms
+  serial prep: plus=193.525 ms minus=163.035 ms update=195.928 ms | push: plus=38.722 ms minus=25.984 ms
+step 296/300: loss_plus=5.189275 loss_minus=6.014299 loss_delta=-8.25024128e-01 g=-4.12512054e+01 | t_pp_plus=2257.074 ms t_pp_minus=2303.456 ms | step=5280.348 ms
+  serial prep: plus=193.149 ms minus=193.472 ms update=198.202 ms | push: plus=38.827 ms minus=38.636 ms
+step 297/300: loss_plus=3.220724 loss_minus=3.135659 loss_delta=8.50651264e-02 g=4.25325632e+00 | t_pp_plus=2616.672 ms t_pp_minus=2636.716 ms | step=6116.070 ms
+  serial prep: plus=194.365 ms minus=244.791 ms update=321.634 ms | push: plus=40.101 ms minus=41.304 ms
+step 298/300: loss_plus=1.340708 loss_minus=1.619344 loss_delta=-2.78635740e-01 g=-1.39317875e+01 | t_pp_plus=3012.391 ms t_pp_minus=3026.728 ms | step=6901.599 ms
+  serial prep: plus=244.106 ms minus=194.597 ms update=321.314 ms | push: plus=41.429 ms minus=40.092 ms
+step 299/300: loss_plus=1.658477 loss_minus=2.669395 loss_delta=-1.01091814e+00 g=-5.05459099e+01 | t_pp_plus=2653.003 ms t_pp_minus=2661.537 ms | step=6228.433 ms
+  serial prep: plus=244.354 ms minus=244.940 ms update=321.359 ms | push: plus=41.357 ms minus=41.405 ms
+step 300/300: loss_plus=3.345820 loss_minus=2.919558 loss_delta=4.26262617e-01 g=2.13131313e+01 | t_pp_plus=2319.002 ms t_pp_minus=2322.108 ms | step=5286.357 ms
+  serial prep: plus=244.180 ms minus=118.645 ms update=197.607 ms | push: plus=41.283 ms minus=26.019 ms
+
+summary:
+  dataset             = SST2
+  pipeline            = false
+  antithetic          = false
+  lora_exec           = fused-htp
+  train_time          = 1626.995 s
+  speed_pp            = 46.96 t/s
+  total_pp_tokens     = 65728
+  avg_step_time       = 5423.316 ms
+  avg_t_pp_per_fwd    = 2332.997 ms
+  avg_tokens_per_fwd  = 109.547
+  avg_prepare_plus    = 204.999 ms
+  avg_prepare_minus   = 211.081 ms
+  avg_prepare_update  = 243.746 ms
+  avg_push_plus       = 37.995 ms
+  avg_push_minus      = 38.830 ms
+  peak_pss_sampled    = -1 KiB
+

@@ -1,0 +1,3 @@
+timestamp_ns,pid,comm,VmRSS_kB,VmHWM_kB,cmdline
+1780899827881603487,17649,llama-zoo-sst2-,222548,691196,./zoo-htp/bin/llama-zoo-sst2-zo-lora --mode coop --pipeline false --antithetic false --lora-exec fused-htp --device HTP0 --lora /data/local/tmp/gguf/Tiny-lora.gguf -m /data/local/tmp/gguf/TinyLlama-1.1B-Chat-v1.0-Q4_0.gguf -ngl 99 -fa on --eval-step -1 --steps 50 
+1780899886727927561,17649,llama-zoo-sst2-,222572,691196,./zoo-htp/bin/llama-zoo-sst2-zo-lora --mode coop --pipeline false --antithetic false --lora-exec fused-htp --device HTP0 --lora /data/local/tmp/gguf/Tiny-lora.gguf -m /data/local/tmp/gguf/TinyLlama-1.1B-Chat-v1.0-Q4_0.gguf -ngl 99 -fa on --eval-step -1 --steps 50 

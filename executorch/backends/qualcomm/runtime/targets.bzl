@@ -1,0 +1,91 @@
+load(
+    "@fbsource//tools/build_defs:default_platform_defs.bzl",
+    "ANDROID",
+)
+load("@fbsource//xplat/executorch/build:runtime_wrapper.bzl", "runtime")
+load("@fbsource//xplat/executorch/backends/qualcomm/third-party:third_party_libs.bzl", "qnn_third_party_dep")
+
+def define_common_targets():
+    """Defines targets that should be shared between fbcode and xplat.
+
+    The directory containing this targets.bzl file should also contain both
+    TARGETS and BUCK files that call this function.
+    """
+
+    runtime.cxx_library(
+        name = "logging",
+        srcs = [
+            "Logging.cpp",
+        ],
+        exported_headers = [
+            "Logging.h",
+        ],
+        define_static_target = True,
+        platforms = [ANDROID],
+        visibility = ["PUBLIC"],
+        deps = [
+            qnn_third_party_dep("api"),
+            qnn_third_party_dep("app_sources"),
+            "//executorch/runtime/backend:interface",
+        ],
+        exported_deps = [
+            qnn_third_party_dep("log"),
+            "//executorch/backends/qualcomm:schema",
+            "//executorch/runtime/core:core",
+        ],
+    )
+
+    # "runtime" target is used for offline compile, can be renamed to runtime_aot_build as a BE.
+    for include_aot_qnn_lib in (True, False):
+        qnn_build_suffix = ("" if include_aot_qnn_lib else "_android_build")
+        runtime.cxx_library(
+            name = "runtime" + qnn_build_suffix,
+            srcs = glob(
+                [
+                    "*.cpp",
+                    "backends/*.cpp",
+                    "backends/gpu/*.cpp",
+                    "backends/htp/*.cpp",
+                    "backends/ir/*.cpp",
+                    "backends/lpai/*.cpp",
+                ] + (["backends/gpu/host/*.cpp"] if include_aot_qnn_lib else ["backends/gpu/target/*.cpp"]) + (
+                    ["backends/htp/host/*.cpp"] if include_aot_qnn_lib else ["backends/htp/target/*.cpp"]) + (
+                    ["backends/ir/host/*.cpp"] if include_aot_qnn_lib else ["backends/ir/target/*.cpp"]) + (
+                    ["backends/lpai/host/*.cpp"] if include_aot_qnn_lib else ["backends/lpai/target/*.cpp"]
+                ),
+                exclude = ["Logging.cpp"],
+            ),
+            exported_headers = glob(
+                [
+                    "*.h",
+                    "backends/*.h",
+                    "backends/gpu/*.h",
+                    "backends/htp/*.h",
+                    "backends/ir/*.h",
+                    "backends/lpai/*.h",
+                ],
+                exclude = ["Logging.h"],
+            ),
+            define_static_target = True,
+            link_whole = True,  # needed for executorch/examples/models/llama:main to register QnnBackend
+            platforms = [ANDROID],
+            visibility = ["PUBLIC"],
+            resources = ({
+                "qnn_lib": qnn_third_party_dep("qnn_offline_compile_libs"),
+                } if include_aot_qnn_lib else {
+            }),
+            deps = [
+                qnn_third_party_dep("api"),
+                qnn_third_party_dep("app_sources"),
+                ":logging",
+                "//executorch/backends/qualcomm:schema",
+                "//executorch/backends/qualcomm/aot/wrappers:wrappers",
+                "//executorch/runtime/core:core",
+                "//executorch/extension/tensor:tensor",
+            ],
+            exported_deps = [
+                "//executorch/runtime/backend:interface",
+                "//executorch/runtime/core/exec_aten/util:scalar_type_util",
+                "//executorch/runtime/core:event_tracer",
+            ],
+        )

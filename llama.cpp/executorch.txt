@@ -1,0 +1,55 @@
+=============
+[2026-06-10T06:56:11+08:00] gemma  (exit=0, duration=13391s)
+Vocab size:        262208
+Steps:             300
+--- last 50 lines of run-gemma.log ---
+end pos forward step=292 time_ms=22158.9 loss=12.477
+start neg forward step=292
+end neg forward step=292 time_ms=23511.8 loss=12.477
+step[292] time_ms=45911.8 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[292] batch_ms=0.002292 noise_ms=158.555 add_pos_ms=39.1489 forward_pos_ms=22158.9 add_neg_ms=39.4746 forward_neg_ms=23511.8 update_ms=3.81901
+start pos forward step=293
+end pos forward step=293 time_ms=22509.2 loss=12.477
+start neg forward step=293
+end neg forward step=293 time_ms=23002.2 loss=12.477
+step[293] time_ms=45753.7 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[293] batch_ms=0.002396 noise_ms=158.855 add_pos_ms=39.2344 forward_pos_ms=22509.2 add_neg_ms=39.5158 forward_neg_ms=23002.2 update_ms=4.39458
+start pos forward step=294
+end pos forward step=294 time_ms=22567.9 loss=12.477
+start neg forward step=294
+end neg forward step=294 time_ms=22709.7 loss=12.477
+step[294] time_ms=45511.4 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[294] batch_ms=0.002604 noise_ms=155.847 add_pos_ms=34.4871 forward_pos_ms=22567.9 add_neg_ms=39.5166 forward_neg_ms=22709.7 update_ms=3.72865
+start pos forward step=295
+end pos forward step=295 time_ms=22481.7 loss=12.477
+start neg forward step=295
+end neg forward step=295 time_ms=22740.1 loss=12.477
+step[295] time_ms=45463.6 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[295] batch_ms=0.0025 noise_ms=158.69 add_pos_ms=38.9917 forward_pos_ms=22481.7 add_neg_ms=39.4645 forward_neg_ms=22740.1 update_ms=4.37786
+start pos forward step=296
+end pos forward step=296 time_ms=22960.7 loss=12.477
+start neg forward step=296
+end neg forward step=296 time_ms=22898.4 loss=12.477
+step[296] time_ms=46087.9 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[296] batch_ms=0.004062 noise_ms=155.981 add_pos_ms=34.499 forward_pos_ms=22960.7 add_neg_ms=34.3898 forward_neg_ms=22898.4 update_ms=3.76708
+start pos forward step=297
+end pos forward step=297 time_ms=23466.5 loss=12.477
+start neg forward step=297
+end neg forward step=297 time_ms=22339.1 loss=12.477
+step[297] time_ms=46046.2 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[297] batch_ms=0.0025 noise_ms=158.489 add_pos_ms=39.0094 forward_pos_ms=23466.5 add_neg_ms=39.2025 forward_neg_ms=22339.1 update_ms=3.69531
+start pos forward step=298
+end pos forward step=298 time_ms=22452.9 loss=12.477
+start neg forward step=298
+end neg forward step=298 time_ms=22727.2 loss=12.477
+step[298] time_ms=45421.3 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[298] batch_ms=0.002344 noise_ms=158.461 add_pos_ms=39.3052 forward_pos_ms=22452.9 add_neg_ms=39.4322 forward_neg_ms=22727.2 update_ms=3.70526
+start pos forward step=299
+end pos forward step=299 time_ms=22607.8 loss=12.477
+start neg forward step=299
+end neg forward step=299 time_ms=22111.3 loss=12.477
+step[299] time_ms=44960.1 loss_plus=12.477 loss_minus=12.477 g=0
+step_timing[299] batch_ms=0.002864 noise_ms=158.595 add_pos_ms=38.8609 forward_pos_ms=22607.8 add_neg_ms=39.4775 forward_neg_ms=22111.3 update_ms=3.72875
+speed_pp=11.5428 tokens/s
+avg_step_time_ms=44592.9
+peak_rss_mib=2566.44

@@ -1,0 +1,20 @@
+=============
+[2026-06-10T18:24:41+08:00] gemma  (exit=126, duration=0s)
+Model:             /data/local/tmp/gguf/gemma-3-4b-it-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/gemma-lora.gguf
+Steps:             500
+--- last 50 lines of run-gemma.log ---
++ tool=llama-zoo-sst2-zo-lora
++ shift
++ adb shell    cd /data/local/tmp/llama.cpp; ulimit -c unlimited;            LD_LIBRARY_PATH=/data/local/tmp/llama.cpp/zoo-cpu/lib       ADSP_LIBRARY_PATH=/data/local/tmp/llama.cpp/zoo-cpu/lib                      ./zoo-cpu/bin/llama-zoo-sst2-zo-lora --mode cpu --pipeline false --antithetic false --device none --lora /data/local/tmp/gguf/gemma-lora.gguf -m /data/local/tmp/gguf/gemma-3-4b-it-Q4_0.gguf -fa on --eval-step -1 --steps 500 
+/system/bin/sh: ./zoo-cpu/bin/llama-zoo-sst2-zo-lora: can't execute: Permission denied
+=============
+[2026-06-10T18:25:14+08:00] gemma  (exit=126, duration=0s)
+Model:             /data/local/tmp/gguf/gemma-3-4b-it-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/gemma-lora.gguf
+Steps:             500
+--- last 50 lines of run-gemma.log ---
++ tool=llama-zoo-sst2-zo-lora
++ shift
++ adb shell    cd /data/local/tmp/llama.cpp; ulimit -c unlimited;            LD_LIBRARY_PATH=/data/local/tmp/llama.cpp/zoo-cpu/lib       ADSP_LIBRARY_PATH=/data/local/tmp/llama.cpp/zoo-cpu/lib                      ./zoo-cpu/bin/llama-zoo-sst2-zo-lora --mode cpu --pipeline false --antithetic false --device none --lora /data/local/tmp/gguf/gemma-lora.gguf -m /data/local/tmp/gguf/gemma-3-4b-it-Q4_0.gguf -fa on --eval-step -1 --steps 500 
+/system/bin/sh: ./zoo-cpu/bin/llama-zoo-sst2-zo-lora: can't execute: Permission denied

@@ -1,0 +1,171 @@
+=============
+[2026-06-10T02:04:52+08:00] tiny  (exit=0, duration=570s)
+Backend:           zoo-htp coop (PROMPT_FA=1, pipeline=true, antithetic=false)
+Model:             /data/local/tmp/gguf/TinyLlama-1.1B-Chat-v1.0-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/Tiny-lora.gguf
+Steps:             300
+--- last 50 lines of run-tiny.log ---
+  pipeline prep: plus=1.619 ms minus=11.213 ms next_noise=102.729 ms | copy_plus_logits=0.238 ms wait_minus=0.004 ms wait_next_noise=0.004 ms wait_plus_loss=0.087 ms
+step 289/300: loss_plus=5.330465 loss_minus=5.095615 loss_delta=2.34849930e-01 g=1.17424965e+01 | t_pp_plus=1056.972 ms t_pp_minus=1040.952 ms | step=2135.717 ms
+  pipeline prep: plus=1.725 ms minus=12.176 ms next_noise=108.293 ms | copy_plus_logits=0.268 ms wait_minus=0.004 ms wait_next_noise=0.004 ms wait_plus_loss=0.076 ms
+step 290/300: loss_plus=3.623730 loss_minus=4.323304 loss_delta=-6.99574471e-01 g=-3.49787254e+01 | t_pp_plus=1045.297 ms t_pp_minus=1052.502 ms | step=2135.541 ms
+  pipeline prep: plus=1.617 ms minus=11.036 ms next_noise=99.891 ms | copy_plus_logits=0.287 ms wait_minus=0.003 ms wait_next_noise=0.004 ms wait_plus_loss=0.095 ms
+step 291/300: loss_plus=6.263278 loss_minus=3.661838 loss_delta=2.60143971e+00 g=1.30071991e+02 | t_pp_plus=1066.971 ms t_pp_minus=1062.039 ms | step=2168.235 ms
+  pipeline prep: plus=1.653 ms minus=9.472 ms next_noise=114.833 ms | copy_plus_logits=0.297 ms wait_minus=0.004 ms wait_next_noise=0.005 ms wait_plus_loss=0.077 ms
+step 292/300: loss_plus=3.738803 loss_minus=3.929288 loss_delta=-1.90484762e-01 g=-9.52423859e+00 | t_pp_plus=656.239 ms t_pp_minus=670.803 ms | step=1383.476 ms
+  pipeline prep: plus=1.798 ms minus=3.993 ms next_noise=101.334 ms | copy_plus_logits=0.230 ms wait_minus=0.003 ms wait_next_noise=0.003 ms wait_plus_loss=0.131 ms
+step 293/300: loss_plus=6.263997 loss_minus=5.829317 loss_delta=4.34679985e-01 g=2.17339993e+01 | t_pp_plus=910.909 ms t_pp_minus=907.266 ms | step=1855.945 ms
+  pipeline prep: plus=1.653 ms minus=11.226 ms next_noise=99.026 ms | copy_plus_logits=0.251 ms wait_minus=0.003 ms wait_next_noise=0.005 ms wait_plus_loss=0.130 ms
+step 294/300: loss_plus=4.178645 loss_minus=3.349215 loss_delta=8.29429626e-01 g=4.14714813e+01 | t_pp_plus=792.035 ms t_pp_minus=785.080 ms | step=1615.986 ms
+  pipeline prep: plus=1.647 ms minus=8.050 ms next_noise=88.791 ms | copy_plus_logits=0.226 ms wait_minus=0.003 ms wait_next_noise=0.005 ms wait_plus_loss=0.074 ms
+step 295/300: loss_plus=3.798404 loss_minus=3.370512 loss_delta=4.27892208e-01 g=2.13946114e+01 | t_pp_plus=643.411 ms t_pp_minus=642.756 ms | step=1323.890 ms
+  pipeline prep: plus=1.645 ms minus=8.779 ms next_noise=106.478 ms | copy_plus_logits=0.251 ms wait_minus=0.002 ms wait_next_noise=0.004 ms wait_plus_loss=0.069 ms
+step 296/300: loss_plus=4.927355 loss_minus=5.478111 loss_delta=-5.50755501e-01 g=-2.75377750e+01 | t_pp_plus=814.792 ms t_pp_minus=783.966 ms | step=1635.987 ms
+  pipeline prep: plus=1.612 ms minus=7.185 ms next_noise=104.000 ms | copy_plus_logits=0.304 ms wait_minus=0.003 ms wait_next_noise=0.005 ms wait_plus_loss=0.077 ms
+step 297/300: loss_plus=4.676857 loss_minus=5.214806 loss_delta=-5.37949085e-01 g=-2.68974552e+01 | t_pp_plus=1050.796 ms t_pp_minus=1051.221 ms | step=2139.598 ms
+  pipeline prep: plus=1.629 ms minus=8.116 ms next_noise=100.732 ms | copy_plus_logits=0.243 ms wait_minus=0.004 ms wait_next_noise=0.003 ms wait_plus_loss=0.063 ms
+step 298/300: loss_plus=3.515593 loss_minus=5.996393 loss_delta=-2.48079967e+00 g=-1.24039986e+02 | t_pp_plus=1456.774 ms t_pp_minus=1458.556 ms | step=2959.849 ms
+  pipeline prep: plus=1.635 ms minus=8.163 ms next_noise=107.155 ms | copy_plus_logits=0.229 ms wait_minus=0.003 ms wait_next_noise=0.003 ms wait_plus_loss=0.072 ms
+step 299/300: loss_plus=4.666083 loss_minus=4.792097 loss_delta=-1.26013279e-01 g=-6.30066395e+00 | t_pp_plus=1051.026 ms t_pp_minus=1059.256 ms | step=2148.125 ms
+  pipeline prep: plus=1.648 ms minus=7.651 ms next_noise=102.941 ms | copy_plus_logits=0.241 ms wait_minus=0.003 ms wait_next_noise=0.006 ms wait_plus_loss=0.079 ms
+step 300/300: loss_plus=5.621226 loss_minus=5.297420 loss_delta=3.23806286e-01 g=1.61903152e+01 | t_pp_plus=915.657 ms t_pp_minus=908.320 ms | step=1859.614 ms
+  pipeline prep: plus=1.448 ms minus=10.761 ms next_noise=0.000 ms | copy_plus_logits=0.275 ms wait_minus=0.004 ms wait_next_noise=0.000 ms wait_plus_loss=0.071 ms
+
+summary:
+  dataset             = SST2
+  pipeline            = true
+  antithetic          = false
+  lora_exec           = fused-htp
+  train_time          = 566.655 s
+  speed_pp            = 138.72 t/s
+  total_pp_tokens     = 76992
+  avg_step_time       = 1888.849 ms
+  avg_t_pp_per_fwd    = 925.039 ms
+  avg_tokens_per_fwd  = 128.320
+  avg_prepare_plus    = 1.645 ms
+  avg_prepare_minus   = 8.816 ms
+  avg_prepare_update  = 0.000 ms
+  avg_prepare_noise   = 97.348 ms
+  avg_prepare_next_noise = 97.428 ms
+  avg_copy_plus_logits = 0.259 ms
+  avg_wait_minus_ready = 0.003 ms
+  avg_wait_next_noise_ready = 0.005 ms
+  avg_wait_plus_loss_ready = 0.077 ms
+  avg_push_plus       = 15.902 ms
+  avg_push_minus      = 16.083 ms
+  peak_pss_sampled    = -1 KiB
+
+=============
+[2026-06-10T02:33:51+08:00] llama  (exit=0, duration=1439s)
+Backend:           zoo-htp coop (PROMPT_FA=1, pipeline=true, antithetic=false)
+Model:             /data/local/tmp/gguf/Llama-3.2-3B-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/Llama-lora.gguf
+Steps:             300
+--- last 50 lines of run-llama.log ---
+  pipeline prep: plus=2.254 ms minus=20.316 ms next_noise=160.804 ms | copy_plus_logits=0.600 ms wait_minus=0.004 ms wait_next_noise=0.005 ms wait_plus_loss=0.143 ms
+step 289/300: loss_plus=3.890780 loss_minus=3.967068 loss_delta=-7.62879848e-02 g=-3.81439924e+00 | t_pp_plus=2343.423 ms t_pp_minus=2335.902 ms | step=4756.961 ms
+  pipeline prep: plus=2.890 ms minus=20.553 ms next_noise=162.139 ms | copy_plus_logits=0.880 ms wait_minus=0.004 ms wait_next_noise=0.006 ms wait_plus_loss=0.143 ms
+step 290/300: loss_plus=3.991144 loss_minus=4.078902 loss_delta=-8.77580643e-02 g=-4.38790321e+00 | t_pp_plus=2719.513 ms t_pp_minus=2750.650 ms | step=5554.559 ms
+  pipeline prep: plus=3.129 ms minus=18.762 ms next_noise=159.140 ms | copy_plus_logits=0.750 ms wait_minus=0.003 ms wait_next_noise=0.005 ms wait_plus_loss=0.158 ms
+step 291/300: loss_plus=3.774197 loss_minus=3.842513 loss_delta=-6.83166981e-02 g=-3.41583490e+00 | t_pp_plus=2380.874 ms t_pp_minus=2387.265 ms | step=4843.363 ms
+  pipeline prep: plus=2.970 ms minus=20.478 ms next_noise=175.389 ms | copy_plus_logits=0.822 ms wait_minus=0.004 ms wait_next_noise=0.007 ms wait_plus_loss=0.205 ms
+step 292/300: loss_plus=3.539083 loss_minus=4.134904 loss_delta=-5.95820904e-01 g=-2.97910461e+01 | t_pp_plus=1956.329 ms t_pp_minus=1997.109 ms | step=4025.197 ms
+  pipeline prep: plus=3.043 ms minus=19.408 ms next_noise=164.566 ms | copy_plus_logits=0.736 ms wait_minus=0.003 ms wait_next_noise=0.005 ms wait_plus_loss=0.135 ms
+step 293/300: loss_plus=5.091610 loss_minus=4.971133 loss_delta=1.20477200e-01 g=6.02385998e+00 | t_pp_plus=2259.498 ms t_pp_minus=2321.511 ms | step=4656.110 ms
+  pipeline prep: plus=2.966 ms minus=20.649 ms next_noise=170.573 ms | copy_plus_logits=0.773 ms wait_minus=0.004 ms wait_next_noise=0.006 ms wait_plus_loss=0.186 ms
+step 294/300: loss_plus=3.621661 loss_minus=3.535221 loss_delta=8.64400864e-02 g=4.32200432e+00 | t_pp_plus=1993.864 ms t_pp_minus=1943.633 ms | step=3999.495 ms
+  pipeline prep: plus=3.043 ms minus=20.293 ms next_noise=161.911 ms | copy_plus_logits=0.541 ms wait_minus=0.003 ms wait_next_noise=0.006 ms wait_plus_loss=0.186 ms
+step 295/300: loss_plus=3.425032 loss_minus=3.879370 loss_delta=-4.54337597e-01 g=-2.27168808e+01 | t_pp_plus=1537.718 ms t_pp_minus=1518.738 ms | step=3129.198 ms
+  pipeline prep: plus=3.102 ms minus=20.352 ms next_noise=163.901 ms | copy_plus_logits=0.787 ms wait_minus=0.004 ms wait_next_noise=0.004 ms wait_plus_loss=0.227 ms
+step 296/300: loss_plus=5.010600 loss_minus=5.313542 loss_delta=-3.02941799e-01 g=-1.51470900e+01 | t_pp_plus=2290.234 ms t_pp_minus=2267.474 ms | step=4631.309 ms
+  pipeline prep: plus=3.135 ms minus=15.110 ms next_noise=167.294 ms | copy_plus_logits=0.632 ms wait_minus=0.003 ms wait_next_noise=0.005 ms wait_plus_loss=0.292 ms
+step 297/300: loss_plus=4.302145 loss_minus=4.531403 loss_delta=-2.29258537e-01 g=-1.14629269e+01 | t_pp_plus=2748.720 ms t_pp_minus=2730.480 ms | step=5553.094 ms
+  pipeline prep: plus=3.037 ms minus=21.063 ms next_noise=164.472 ms | copy_plus_logits=0.571 ms wait_minus=0.003 ms wait_next_noise=0.002 ms wait_plus_loss=0.120 ms
+step 298/300: loss_plus=3.814199 loss_minus=3.482348 loss_delta=3.31851006e-01 g=1.65925503e+01 | t_pp_plus=3011.194 ms t_pp_minus=3044.292 ms | step=6124.159 ms
+  pipeline prep: plus=2.274 ms minus=18.710 ms next_noise=160.669 ms | copy_plus_logits=0.539 ms wait_minus=0.003 ms wait_next_noise=0.003 ms wait_plus_loss=0.133 ms
+step 299/300: loss_plus=3.894224 loss_minus=3.705561 loss_delta=1.88663244e-01 g=9.43316269e+00 | t_pp_plus=2719.042 ms t_pp_minus=2734.570 ms | step=5528.572 ms
+  pipeline prep: plus=3.003 ms minus=20.825 ms next_noise=165.496 ms | copy_plus_logits=0.958 ms wait_minus=0.005 ms wait_next_noise=0.006 ms wait_plus_loss=0.161 ms
+step 300/300: loss_plus=4.793930 loss_minus=4.848742 loss_delta=-5.48114777e-02 g=-2.74057388e+00 | t_pp_plus=2371.515 ms t_pp_minus=2368.750 ms | step=4818.199 ms
+  pipeline prep: plus=2.942 ms minus=21.390 ms next_noise=0.000 ms | copy_plus_logits=0.897 ms wait_minus=0.005 ms wait_next_noise=0.000 ms wait_plus_loss=0.196 ms
+
+summary:
+  dataset             = SST2
+  pipeline            = true
+  antithetic          = false
+  lora_exec           = fused-htp
+  train_time          = 1430.176 s
+  speed_pp            = 47.79 t/s
+  total_pp_tokens     = 67264
+  avg_step_time       = 4767.253 ms
+  avg_t_pp_per_fwd    = 2345.727 ms
+  avg_tokens_per_fwd  = 112.107
+  avg_prepare_plus    = 2.914 ms
+  avg_prepare_minus   = 19.003 ms
+  avg_prepare_update  = 0.000 ms
+  avg_prepare_noise   = 164.731 ms
+  avg_prepare_next_noise = 164.807 ms
+  avg_copy_plus_logits = 0.748 ms
+  avg_wait_minus_ready = 0.003 ms
+  avg_wait_next_noise_ready = 0.005 ms
+  avg_wait_plus_loss_ready = 0.191 ms
+  avg_push_plus       = 29.934 ms
+  avg_push_minus      = 29.748 ms
+  peak_pss_sampled    = -1 KiB
+
+=============
+[2026-06-10T03:03:00+08:00] gemma  (exit=0, duration=1449s)
+Backend:           zoo-htp coop (PROMPT_FA=1, pipeline=true, antithetic=false)
+Model:             /data/local/tmp/gguf/gemma-3-4b-it-Q4_0.gguf
+LoRA:              /data/local/tmp/gguf/gemma-lora.gguf
+Steps:             300
+--- last 50 lines of run-gemma.log ---
+  pipeline prep: plus=4.185 ms minus=22.494 ms next_noise=213.606 ms | copy_plus_logits=2.023 ms wait_minus=0.005 ms wait_next_noise=0.005 ms wait_plus_loss=0.852 ms
+step 289/300: loss_plus=1.693544 loss_minus=2.606283 loss_delta=-9.12738681e-01 g=-4.56369362e+01 | t_pp_plus=2328.105 ms t_pp_minus=2294.951 ms | step=4723.497 ms
+  pipeline prep: plus=4.046 ms minus=25.803 ms next_noise=226.286 ms | copy_plus_logits=1.737 ms wait_minus=0.003 ms wait_next_noise=0.006 ms wait_plus_loss=0.428 ms
+step 290/300: loss_plus=2.300621 loss_minus=2.306097 loss_delta=-5.47552109e-03 g=-2.73776054e-01 | t_pp_plus=2268.065 ms t_pp_minus=2287.317 ms | step=4655.481 ms
+  pipeline prep: plus=3.803 ms minus=26.446 ms next_noise=213.706 ms | copy_plus_logits=2.060 ms wait_minus=0.004 ms wait_next_noise=0.006 ms wait_plus_loss=0.390 ms
+step 291/300: loss_plus=2.191799 loss_minus=1.559340 loss_delta=6.32459283e-01 g=3.16229649e+01 | t_pp_plus=2277.092 ms t_pp_minus=2283.245 ms | step=4664.837 ms
+  pipeline prep: plus=3.810 ms minus=27.554 ms next_noise=220.439 ms | copy_plus_logits=1.657 ms wait_minus=0.003 ms wait_next_noise=0.008 ms wait_plus_loss=0.392 ms
+step 292/300: loss_plus=2.033497 loss_minus=1.670559 loss_delta=3.62937927e-01 g=1.81468964e+01 | t_pp_plus=1919.224 ms t_pp_minus=1918.341 ms | step=3939.647 ms
+  pipeline prep: plus=3.990 ms minus=24.293 ms next_noise=222.462 ms | copy_plus_logits=1.897 ms wait_minus=0.004 ms wait_next_noise=0.005 ms wait_plus_loss=0.386 ms
+step 293/300: loss_plus=2.551430 loss_minus=2.959899 loss_delta=-4.08469439e-01 g=-2.04234715e+01 | t_pp_plus=2191.549 ms t_pp_minus=2241.370 ms | step=4565.549 ms
+  pipeline prep: plus=4.164 ms minus=22.509 ms next_noise=216.606 ms | copy_plus_logits=1.781 ms wait_minus=0.003 ms wait_next_noise=0.007 ms wait_plus_loss=0.391 ms
+step 294/300: loss_plus=1.368125 loss_minus=1.937624 loss_delta=-5.69498658e-01 g=-2.84749336e+01 | t_pp_plus=1902.615 ms t_pp_minus=1946.077 ms | step=3982.041 ms
+  pipeline prep: plus=3.818 ms minus=26.400 ms next_noise=216.214 ms | copy_plus_logits=2.051 ms wait_minus=0.008 ms wait_next_noise=0.006 ms wait_plus_loss=0.505 ms
+step 295/300: loss_plus=1.870004 loss_minus=1.503883 loss_delta=3.66120696e-01 g=1.83060360e+01 | t_pp_plus=1760.861 ms t_pp_minus=1756.931 ms | step=3667.912 ms
+  pipeline prep: plus=4.020 ms minus=22.133 ms next_noise=218.210 ms | copy_plus_logits=1.984 ms wait_minus=0.004 ms wait_next_noise=0.006 ms wait_plus_loss=0.638 ms
+step 296/300: loss_plus=5.336585 loss_minus=3.478325 loss_delta=1.85826039e+00 g=9.29130249e+01 | t_pp_plus=2186.322 ms t_pp_minus=2214.230 ms | step=4505.653 ms
+  pipeline prep: plus=4.006 ms minus=25.162 ms next_noise=210.899 ms | copy_plus_logits=1.644 ms wait_minus=0.004 ms wait_next_noise=0.006 ms wait_plus_loss=0.428 ms
+step 297/300: loss_plus=1.581891 loss_minus=2.447794 loss_delta=-8.65902781e-01 g=-4.32951393e+01 | t_pp_plus=2559.097 ms t_pp_minus=2551.140 ms | step=5212.085 ms
+  pipeline prep: plus=3.883 ms minus=23.416 ms next_noise=214.620 ms | copy_plus_logits=1.603 ms wait_minus=0.004 ms wait_next_noise=0.005 ms wait_plus_loss=0.369 ms
+step 298/300: loss_plus=1.528771 loss_minus=1.440511 loss_delta=8.82602930e-02 g=4.41301489e+00 | t_pp_plus=2882.357 ms t_pp_minus=2921.097 ms | step=5908.847 ms
+  pipeline prep: plus=3.775 ms minus=24.126 ms next_noise=226.607 ms | copy_plus_logits=2.040 ms wait_minus=0.004 ms wait_next_noise=0.008 ms wait_plus_loss=0.401 ms
+step 299/300: loss_plus=2.056731 loss_minus=1.150043 loss_delta=9.06688213e-01 g=4.53344116e+01 | t_pp_plus=2551.842 ms t_pp_minus=2579.129 ms | step=5232.723 ms
+  pipeline prep: plus=3.923 ms minus=23.090 ms next_noise=220.476 ms | copy_plus_logits=1.634 ms wait_minus=0.004 ms wait_next_noise=0.006 ms wait_plus_loss=0.375 ms
+step 300/300: loss_plus=2.591701 loss_minus=2.157716 loss_delta=4.33985472e-01 g=2.16992741e+01 | t_pp_plus=2264.582 ms t_pp_minus=2287.267 ms | step=4655.624 ms
+  pipeline prep: plus=3.812 ms minus=27.462 ms next_noise=0.000 ms | copy_plus_logits=1.793 ms wait_minus=0.004 ms wait_next_noise=0.000 ms wait_plus_loss=0.392 ms
+
+summary:
+  dataset             = SST2
+  pipeline            = true
+  antithetic          = false
+  lora_exec           = fused-htp
+  train_time          = 1439.665 s
+  speed_pp            = 46.73 t/s
+  total_pp_tokens     = 65728
+  avg_step_time       = 4798.885 ms
+  avg_t_pp_per_fwd    = 2344.315 ms
+  avg_tokens_per_fwd  = 109.547
+  avg_prepare_plus    = 3.870 ms
+  avg_prepare_minus   = 24.504 ms
+  avg_prepare_update  = 0.000 ms
+  avg_prepare_noise   = 217.212 ms
+  avg_prepare_next_noise = 217.308 ms
+  avg_copy_plus_logits = 1.656 ms
+  avg_wait_minus_ready = 0.004 ms
+  avg_wait_next_noise_ready = 0.006 ms
+  avg_wait_plus_loss_ready = 0.435 ms
+  avg_push_plus       = 38.877 ms
+  avg_push_minus      = 40.535 ms
+  peak_pss_sampled    = -1 KiB
+

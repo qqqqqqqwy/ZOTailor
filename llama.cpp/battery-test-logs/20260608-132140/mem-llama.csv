@@ -1,0 +1,2 @@
+timestamp_ns,pid,comm,VmRSS_kB,VmHWM_kB,cmdline
+1780896828423904486,26664,llama-zoo-sst2-,920912,2254476,./zoo-htp/bin/llama-zoo-sst2-zo-lora --mode coop --pipeline true --antithetic true --lora-exec fused-htp --device HTP0 --lora /data/local/tmp/gguf/Llama-lora.gguf -m /data/local/tmp/gguf/Llama-3.2-3B-Q4_0.gguf -ngl 99 -fa on --eval-step -1 --steps 50 

@@ -1,0 +1,165 @@
+=============
+[2026-06-10T08:14:41+08:00] tiny  (exit=0, duration=4110s)
+Config:            tiny_int4/config_lora_fa.json
+Steps:             300
+--- last 50 lines of run-tiny.log ---
+step=255 loss_plus=4.4525 loss_minus=4.52697 g=-3.72369 b_rms=0.0170059 b_mean_abs=0.0135672 b_max_abs=0.0878534 step_time_ms=14397.4
+step=256 loss_plus=4.86185 loss_minus=3.54799 g=65.6926 b_rms=0.0173223 b_mean_abs=0.0138193 b_max_abs=0.0858619 step_time_ms=18480.6
+step=257 loss_plus=3.32066 loss_minus=2.83472 g=24.297 b_rms=0.0173643 b_mean_abs=0.0138528 b_max_abs=0.0865906 step_time_ms=13056.9
+step=258 loss_plus=4.3502 loss_minus=5.67134 g=-66.0571 b_rms=0.0176774 b_mean_abs=0.0141028 b_max_abs=0.0889468 step_time_ms=13580.9
+step=259 loss_plus=4.29776 loss_minus=4.43177 g=-6.70048 b_rms=0.0176806 b_mean_abs=0.0141053 b_max_abs=0.0888434 step_time_ms=12880.8
+step=260 loss_plus=3.93517 loss_minus=4.96352 g=-51.4175 b_rms=0.0178672 b_mean_abs=0.0142537 b_max_abs=0.0889989 step_time_ms=16620.8
+step=261 loss_plus=4.43129 loss_minus=5.32757 g=-44.814 b_rms=0.0180063 b_mean_abs=0.014366 b_max_abs=0.091702 step_time_ms=23088.9
+step=262 loss_plus=2.97234 loss_minus=3.39248 g=-21.0071 b_rms=0.0180372 b_mean_abs=0.0143909 b_max_abs=0.0916409 step_time_ms=13388.8
+step=263 loss_plus=5.40856 loss_minus=4.98828 g=21.0142 b_rms=0.0180688 b_mean_abs=0.0144164 b_max_abs=0.0910457 step_time_ms=15009.1
+step=264 loss_plus=3.68087 loss_minus=3.86104 g=-9.00866 b_rms=0.0180743 b_mean_abs=0.014421 b_max_abs=0.0914125 step_time_ms=16672.7
+step=265 loss_plus=4.55197 loss_minus=4.60258 g=-2.53031 b_rms=0.0180747 b_mean_abs=0.0144213 b_max_abs=0.0913785 step_time_ms=12930.6
+step=266 loss_plus=5.76088 loss_minus=5.43793 g=16.1471 b_rms=0.0180926 b_mean_abs=0.0144359 b_max_abs=0.0915553 step_time_ms=19724.8
+step=267 loss_plus=4.32433 loss_minus=4.17457 g=7.48818 b_rms=0.0180964 b_mean_abs=0.0144391 b_max_abs=0.0906488 step_time_ms=6897.7
+step=268 loss_plus=3.66467 loss_minus=3.71779 g=-2.65605 b_rms=0.0180969 b_mean_abs=0.0144396 b_max_abs=0.0908126 step_time_ms=8840.63
+step=269 loss_plus=3.55029 loss_minus=3.51852 g=1.5888 b_rms=0.0180971 b_mean_abs=0.0144398 b_max_abs=0.0907921 step_time_ms=11141.8
+step=270 loss_plus=4.0652 loss_minus=3.80431 g=13.0445 b_rms=0.0181086 b_mean_abs=0.0144486 b_max_abs=0.090224 step_time_ms=10488.7
+step=271 loss_plus=4.14243 loss_minus=3.82659 g=15.792 b_rms=0.0181262 b_mean_abs=0.0144624 b_max_abs=0.0901432 step_time_ms=15794.3
+step=272 loss_plus=3.72238 loss_minus=3.1684 g=27.6988 b_rms=0.0181781 b_mean_abs=0.0145043 b_max_abs=0.0918689 step_time_ms=17100.7
+step=273 loss_plus=4.57953 loss_minus=4.19036 g=19.4583 b_rms=0.0182052 b_mean_abs=0.0145256 b_max_abs=0.0912135 step_time_ms=13742.5
+step=274 loss_plus=4.29577 loss_minus=4.25864 g=1.85654 b_rms=0.0182054 b_mean_abs=0.0145258 b_max_abs=0.0912436 step_time_ms=12727.4
+step=275 loss_plus=4.4182 loss_minus=4.68562 g=-13.3706 b_rms=0.0182177 b_mean_abs=0.0145356 b_max_abs=0.0911604 step_time_ms=10726
+step=276 loss_plus=5.20279 loss_minus=5.10276 g=5.0014 b_rms=0.0182198 b_mean_abs=0.0145375 b_max_abs=0.0908853 step_time_ms=12868.7
+step=277 loss_plus=4.46546 loss_minus=4.48329 g=-0.891306 b_rms=0.0182199 b_mean_abs=0.0145376 b_max_abs=0.0908574 step_time_ms=17358.7
+step=278 loss_plus=3.75622 loss_minus=4.55359 g=-39.8683 b_rms=0.0183297 b_mean_abs=0.0146261 b_max_abs=0.0900905 step_time_ms=19866
+step=279 loss_plus=2.36818 loss_minus=2.95827 g=-29.5046 b_rms=0.0183879 b_mean_abs=0.0146716 b_max_abs=0.0912518 step_time_ms=10899.2
+step=280 loss_plus=4.00415 loss_minus=3.20373 g=40.0207 b_rms=0.0184955 b_mean_abs=0.0147576 b_max_abs=0.0926717 step_time_ms=22153.7
+step=281 loss_plus=4.30527 loss_minus=4.76571 g=-23.0221 b_rms=0.0185327 b_mean_abs=0.0147872 b_max_abs=0.0927639 step_time_ms=14760.9
+step=282 loss_plus=3.52881 loss_minus=3.54693 g=-0.905987 b_rms=0.0185327 b_mean_abs=0.0147873 b_max_abs=0.0927929 step_time_ms=8812.15
+step=283 loss_plus=4.06306 loss_minus=3.86815 g=9.74526 b_rms=0.0185391 b_mean_abs=0.0147925 b_max_abs=0.0927344 step_time_ms=16804.4
+step=284 loss_plus=3.97249 loss_minus=4.11464 g=-7.10778 b_rms=0.0185423 b_mean_abs=0.0147951 b_max_abs=0.0929966 step_time_ms=10732.2
+step=285 loss_plus=3.65416 loss_minus=3.68954 g=-1.76894 b_rms=0.0185425 b_mean_abs=0.0147953 b_max_abs=0.0929631 step_time_ms=16464.8
+step=286 loss_plus=3.68845 loss_minus=3.54465 g=7.19 b_rms=0.0185462 b_mean_abs=0.0147982 b_max_abs=0.0933411 step_time_ms=11788.2
+step=287 loss_plus=4.75277 loss_minus=4.97343 g=-11.0328 b_rms=0.0185542 b_mean_abs=0.0148047 b_max_abs=0.0934863 step_time_ms=10234.2
+step=288 loss_plus=3.65342 loss_minus=4.35599 g=-35.1283 b_rms=0.0186376 b_mean_abs=0.0148703 b_max_abs=0.0959694 step_time_ms=12895.3
+step=289 loss_plus=4.51592 loss_minus=5.59027 g=-53.7171 b_rms=0.0188286 b_mean_abs=0.0150239 b_max_abs=0.0945338 step_time_ms=13567.8
+step=290 loss_plus=4.1059 loss_minus=3.70132 g=20.229 b_rms=0.0188564 b_mean_abs=0.015046 b_max_abs=0.0946245 step_time_ms=11164.1
+step=291 loss_plus=4.20727 loss_minus=3.91363 g=14.6823 b_rms=0.0188712 b_mean_abs=0.0150578 b_max_abs=0.0943291 step_time_ms=18049.8
+step=292 loss_plus=3.83707 loss_minus=3.48824 g=17.4419 b_rms=0.0188915 b_mean_abs=0.0150737 b_max_abs=0.0952601 step_time_ms=8884.72
+step=293 loss_plus=5.18822 loss_minus=5.42498 g=-11.838 b_rms=0.0189008 b_mean_abs=0.0150808 b_max_abs=0.0960178 step_time_ms=16034.9
+step=294 loss_plus=3.22032 loss_minus=3.18617 g=1.70749 b_rms=0.018901 b_mean_abs=0.015081 b_max_abs=0.0960373 step_time_ms=10949.8
+step=295 loss_plus=3.3434 loss_minus=3.79624 g=-22.6417 b_rms=0.0189354 b_mean_abs=0.0151085 b_max_abs=0.0949531 step_time_ms=6855.61
+step=296 loss_plus=4.79996 loss_minus=5.46209 g=-33.1062 b_rms=0.0190086 b_mean_abs=0.0151669 b_max_abs=0.0946386 step_time_ms=14422.9
+step=297 loss_plus=4.54913 loss_minus=4.15795 g=19.5586 b_rms=0.0190337 b_mean_abs=0.0151872 b_max_abs=0.0940777 step_time_ms=15468.8
+step=298 loss_plus=4.37066 loss_minus=4.1645 g=10.3082 b_rms=0.019041 b_mean_abs=0.0151927 b_max_abs=0.0939067 step_time_ms=20455.1
+step=299 loss_plus=4.03723 loss_minus=4.47029 g=-21.6534 b_rms=0.0190708 b_mean_abs=0.0152166 b_max_abs=0.0951487 step_time_ms=26069
+step=300 loss_plus=4.09591 loss_minus=4.47884 g=-19.1465 b_rms=0.019095 b_mean_abs=0.0152354 b_max_abs=0.0948605 step_time_ms=17937.2
+speed_pp=9.910
+avg_step_time_ms=13645.851
+peak_memory_mb=1465.840
+peak_pss_memory_mb=1382.073
+=============
+[2026-06-10T11:07:47+08:00] llama  (exit=0, duration=9786s)
+Config:            llama_int4/config_lora_fa.json
+Steps:             300
+--- last 50 lines of run-llama.log ---
+step=255 loss_plus=4.43977 loss_minus=4.31774 g=6.10115 b_rms=0.0186669 b_mean_abs=0.014894 b_max_abs=0.107062 step_time_ms=26008.7
+step=256 loss_plus=3.76252 loss_minus=3.54876 g=10.6877 b_rms=0.0186746 b_mean_abs=0.0149001 b_max_abs=0.108156 step_time_ms=44250.3
+step=257 loss_plus=4.16427 loss_minus=3.71639 g=22.3942 b_rms=0.0187081 b_mean_abs=0.0149265 b_max_abs=0.108661 step_time_ms=26107.8
+step=258 loss_plus=5.14125 loss_minus=4.61288 g=26.4185 b_rms=0.0187539 b_mean_abs=0.0149623 b_max_abs=0.108663 step_time_ms=24733.7
+step=259 loss_plus=4.09931 loss_minus=4.63486 g=-26.7778 b_rms=0.0188029 b_mean_abs=0.0150009 b_max_abs=0.10715 step_time_ms=34732.1
+step=260 loss_plus=5.28872 loss_minus=5.00592 g=14.1402 b_rms=0.0188157 b_mean_abs=0.0150113 b_max_abs=0.107157 step_time_ms=33577.9
+step=261 loss_plus=4.20196 loss_minus=4.27689 g=-3.74637 b_rms=0.0188166 b_mean_abs=0.015012 b_max_abs=0.107242 step_time_ms=62323
+step=262 loss_plus=3.85232 loss_minus=4.03376 g=-9.0716 b_rms=0.0188222 b_mean_abs=0.0150166 b_max_abs=0.107127 step_time_ms=32542.5
+step=263 loss_plus=5.17961 loss_minus=4.93528 g=12.2166 b_rms=0.018832 b_mean_abs=0.0150243 b_max_abs=0.10673 step_time_ms=27532.7
+step=264 loss_plus=4.95008 loss_minus=4.19601 g=37.7035 b_rms=0.0189267 b_mean_abs=0.0150999 b_max_abs=0.109069 step_time_ms=36001.4
+step=265 loss_plus=4.3303 loss_minus=5.14606 g=-40.7879 b_rms=0.019037 b_mean_abs=0.015188 b_max_abs=0.111687 step_time_ms=25946.4
+step=266 loss_plus=5.51002 loss_minus=5.16941 g=17.0306 b_rms=0.0190563 b_mean_abs=0.0152033 b_max_abs=0.112513 step_time_ms=43406.4
+step=267 loss_plus=4.64811 loss_minus=3.82617 g=41.097 b_rms=0.0191668 b_mean_abs=0.0152915 b_max_abs=0.114446 step_time_ms=21670.9
+step=268 loss_plus=4.15319 loss_minus=4.08507 g=3.40599 b_rms=0.0191676 b_mean_abs=0.0152921 b_max_abs=0.114268 step_time_ms=22644.2
+step=269 loss_plus=3.31565 loss_minus=4.0145 g=-34.9423 b_rms=0.0192468 b_mean_abs=0.0153552 b_max_abs=0.114205 step_time_ms=28568
+step=270 loss_plus=3.95185 loss_minus=4.8927 g=-47.0427 b_rms=0.0193888 b_mean_abs=0.015469 b_max_abs=0.116424 step_time_ms=21742.7
+step=271 loss_plus=3.51591 loss_minus=3.93153 g=-20.7809 b_rms=0.019416 b_mean_abs=0.0154909 b_max_abs=0.117585 step_time_ms=31473.5
+step=272 loss_plus=3.18164 loss_minus=2.97655 g=10.2542 b_rms=0.0194225 b_mean_abs=0.0154962 b_max_abs=0.118476 step_time_ms=41061.2
+step=273 loss_plus=4.33501 loss_minus=4.37067 g=-1.78275 b_rms=0.0194228 b_mean_abs=0.0154964 b_max_abs=0.118444 step_time_ms=30706.9
+step=274 loss_plus=4.13273 loss_minus=3.93609 g=9.83213 b_rms=0.019429 b_mean_abs=0.0155013 b_max_abs=0.118579 step_time_ms=35477.3
+step=275 loss_plus=4.54715 loss_minus=4.47965 g=3.37481 b_rms=0.0194298 b_mean_abs=0.0155019 b_max_abs=0.118635 step_time_ms=20695.1
+step=276 loss_plus=4.02204 loss_minus=4.67743 g=-32.7694 b_rms=0.0194982 b_mean_abs=0.0155572 b_max_abs=0.118974 step_time_ms=29183.5
+step=277 loss_plus=4.50639 loss_minus=3.8855 g=31.0443 b_rms=0.0195601 b_mean_abs=0.0156062 b_max_abs=0.120268 step_time_ms=39145.8
+step=278 loss_plus=3.33021 loss_minus=4.16195 g=-41.587 b_rms=0.0196698 b_mean_abs=0.0156935 b_max_abs=0.119663 step_time_ms=39174.7
+step=279 loss_plus=3.25767 loss_minus=2.94492 g=15.6371 b_rms=0.0196852 b_mean_abs=0.0157059 b_max_abs=0.120407 step_time_ms=32510
+step=280 loss_plus=3.59953 loss_minus=3.3867 g=10.6416 b_rms=0.0196926 b_mean_abs=0.0157116 b_max_abs=0.120314 step_time_ms=50422.4
+step=281 loss_plus=3.89462 loss_minus=4.88605 g=-49.5715 b_rms=0.0198461 b_mean_abs=0.0158336 b_max_abs=0.120062 step_time_ms=30511.2
+step=282 loss_plus=3.83767 loss_minus=3.32365 g=25.7011 b_rms=0.0198874 b_mean_abs=0.0158668 b_max_abs=0.11869 step_time_ms=25886
+step=283 loss_plus=4.13099 loss_minus=3.76504 g=18.2974 b_rms=0.0199086 b_mean_abs=0.0158838 b_max_abs=0.117514 step_time_ms=33800.3
+step=284 loss_plus=3.79924 loss_minus=4.19342 g=-19.7088 b_rms=0.0199335 b_mean_abs=0.0159034 b_max_abs=0.117424 step_time_ms=26570
+step=285 loss_plus=3.3801 loss_minus=3.78036 g=-20.0134 b_rms=0.0199577 b_mean_abs=0.0159223 b_max_abs=0.116813 step_time_ms=40554.5
+step=286 loss_plus=3.32508 loss_minus=3.83573 g=-25.5327 b_rms=0.0199984 b_mean_abs=0.0159545 b_max_abs=0.117963 step_time_ms=22926.2
+step=287 loss_plus=4.28675 loss_minus=3.69425 g=29.6253 b_rms=0.0200532 b_mean_abs=0.015998 b_max_abs=0.118484 step_time_ms=19873.9
+step=288 loss_plus=3.69762 loss_minus=3.59077 g=5.34241 b_rms=0.020055 b_mean_abs=0.0159997 b_max_abs=0.118246 step_time_ms=32834.6
+step=289 loss_plus=4.54269 loss_minus=3.98845 g=27.7116 b_rms=0.0201025 b_mean_abs=0.0160374 b_max_abs=0.117216 step_time_ms=30579
+step=290 loss_plus=3.56203 loss_minus=3.63097 g=-3.44685 b_rms=0.0201031 b_mean_abs=0.0160379 b_max_abs=0.117301 step_time_ms=33289.7
+step=291 loss_plus=4.19751 loss_minus=3.36401 g=41.675 b_rms=0.0202103 b_mean_abs=0.0161229 b_max_abs=0.116584 step_time_ms=36146.2
+step=292 loss_plus=3.12226 loss_minus=3.61441 g=-24.6072 b_rms=0.0202479 b_mean_abs=0.0161527 b_max_abs=0.116447 step_time_ms=24227.5
+step=293 loss_plus=5.12247 loss_minus=3.98944 g=56.6512 b_rms=0.0204452 b_mean_abs=0.0163103 b_max_abs=0.114273 step_time_ms=32895
+step=294 loss_plus=3.25388 loss_minus=2.72009 g=26.6898 b_rms=0.0204881 b_mean_abs=0.0163447 b_max_abs=0.112656 step_time_ms=24961.8
+step=295 loss_plus=3.26203 loss_minus=2.9679 g=14.7067 b_rms=0.0205015 b_mean_abs=0.0163555 b_max_abs=0.113406 step_time_ms=23560
+step=296 loss_plus=4.87343 loss_minus=4.86875 g=0.233711 b_rms=0.0205015 b_mean_abs=0.0163555 b_max_abs=0.113394 step_time_ms=42107.3
+step=297 loss_plus=3.85325 loss_minus=3.56921 g=14.2018 b_rms=0.0205139 b_mean_abs=0.0163653 b_max_abs=0.113146 step_time_ms=34753.2
+step=298 loss_plus=3.4996 loss_minus=3.88949 g=-19.4944 b_rms=0.0205371 b_mean_abs=0.0163835 b_max_abs=0.114432 step_time_ms=50276.7
+step=299 loss_plus=3.75435 loss_minus=3.48645 g=13.3952 b_rms=0.0205482 b_mean_abs=0.0163926 b_max_abs=0.114544 step_time_ms=53726.7
+step=300 loss_plus=4.64003 loss_minus=4.26376 g=18.8135 b_rms=0.0205699 b_mean_abs=0.0164097 b_max_abs=0.113859 step_time_ms=40778
+speed_pp=3.496
+avg_step_time_ms=32476.241
+peak_memory_mb=4686.539
+peak_pss_memory_mb=4509.636
+=============
+[2026-06-10T14:23:52+08:00] gemma  (exit=0, duration=11165s)
+Config:            gemma_int4/config_lora_fa.json
+Steps:             300
+--- last 50 lines of run-gemma.log ---
+step=255 loss_plus=3.2661 loss_minus=3.33665 g=-3.52771 b_rms=0.0216052 b_mean_abs=0.0172406 b_max_abs=0.119112 step_time_ms=33582.1
+step=256 loss_plus=1.85574 loss_minus=2.33961 g=-24.1934 b_rms=0.0216385 b_mean_abs=0.0172673 b_max_abs=0.120161 step_time_ms=51155.1
+step=257 loss_plus=1.56655 loss_minus=2.53229 g=-48.2868 b_rms=0.0217738 b_mean_abs=0.0173755 b_max_abs=0.11908 step_time_ms=31632.7
+step=258 loss_plus=2.91394 loss_minus=2.83217 g=4.08873 b_rms=0.0217747 b_mean_abs=0.0173762 b_max_abs=0.119008 step_time_ms=29492.3
+step=259 loss_plus=3.43974 loss_minus=3.76764 g=-16.3953 b_rms=0.0217902 b_mean_abs=0.0173889 b_max_abs=0.119086 step_time_ms=38981.4
+step=260 loss_plus=3.07292 loss_minus=3.27524 g=-10.1162 b_rms=0.0217957 b_mean_abs=0.0173933 b_max_abs=0.119512 step_time_ms=36688.1
+step=261 loss_plus=1.96706 loss_minus=2.18686 g=-10.9902 b_rms=0.0218028 b_mean_abs=0.017399 b_max_abs=0.11814 step_time_ms=66536.1
+step=262 loss_plus=2.7409 loss_minus=3.14676 g=-20.2932 b_rms=0.0218263 b_mean_abs=0.0174179 b_max_abs=0.118271 step_time_ms=36996.2
+step=263 loss_plus=3.72318 loss_minus=3.61997 g=5.16026 b_rms=0.0218279 b_mean_abs=0.0174192 b_max_abs=0.118274 step_time_ms=31284.1
+step=264 loss_plus=3.01022 loss_minus=2.02628 g=49.1968 b_rms=0.0219666 b_mean_abs=0.0175292 b_max_abs=0.118572 step_time_ms=35610.8
+step=265 loss_plus=3.57531 loss_minus=3.33223 g=12.1539 b_rms=0.0219747 b_mean_abs=0.0175357 b_max_abs=0.117809 step_time_ms=25373.7
+step=266 loss_plus=3.98444 loss_minus=3.2968 g=34.3819 b_rms=0.0220423 b_mean_abs=0.0175895 b_max_abs=0.117448 step_time_ms=46469.9
+step=267 loss_plus=3.23328 loss_minus=3.34958 g=-5.81509 b_rms=0.0220441 b_mean_abs=0.017591 b_max_abs=0.116945 step_time_ms=27074.8
+step=268 loss_plus=2.84761 loss_minus=2.70874 g=6.94346 b_rms=0.0220468 b_mean_abs=0.0175932 b_max_abs=0.116139 step_time_ms=24955.2
+step=269 loss_plus=2.28514 loss_minus=3.02444 g=-36.965 b_rms=0.022123 b_mean_abs=0.0176537 b_max_abs=0.115862 step_time_ms=32561.1
+step=270 loss_plus=3.10148 loss_minus=3.41149 g=-15.5003 b_rms=0.0221362 b_mean_abs=0.0176642 b_max_abs=0.115421 step_time_ms=24944
+step=271 loss_plus=2.06235 loss_minus=1.82008 g=12.1132 b_rms=0.0221448 b_mean_abs=0.0176709 b_max_abs=0.11558 step_time_ms=42079
+step=272 loss_plus=1.7929 loss_minus=1.03979 g=37.6553 b_rms=0.0222246 b_mean_abs=0.0177349 b_max_abs=0.117157 step_time_ms=53246.5
+step=273 loss_plus=2.47222 loss_minus=2.23361 g=11.9303 b_rms=0.0222326 b_mean_abs=0.0177416 b_max_abs=0.116986 step_time_ms=34856.1
+step=274 loss_plus=2.94089 loss_minus=2.34386 g=29.8515 b_rms=0.0222821 b_mean_abs=0.017781 b_max_abs=0.117935 step_time_ms=36214.4
+step=275 loss_plus=3.35721 loss_minus=3.23886 g=5.9176 b_rms=0.022284 b_mean_abs=0.0177826 b_max_abs=0.117605 step_time_ms=22505.9
+step=276 loss_plus=3.1448 loss_minus=2.95168 g=9.65564 b_rms=0.0222894 b_mean_abs=0.0177869 b_max_abs=0.117764 step_time_ms=30832.3
+step=277 loss_plus=3.03204 loss_minus=2.91577 g=5.81322 b_rms=0.0222915 b_mean_abs=0.0177886 b_max_abs=0.117631 step_time_ms=44562.2
+step=278 loss_plus=2.81628 loss_minus=2.37187 g=22.2203 b_rms=0.0223193 b_mean_abs=0.0178107 b_max_abs=0.118704 step_time_ms=42656.1
+step=279 loss_plus=1.36099 loss_minus=2.16464 g=-40.1826 b_rms=0.0224094 b_mean_abs=0.0178819 b_max_abs=0.119459 step_time_ms=36214.5
+step=280 loss_plus=2.19085 loss_minus=2.40103 g=-10.5089 b_rms=0.0224155 b_mean_abs=0.0178867 b_max_abs=0.119778 step_time_ms=59618
+step=281 loss_plus=2.82274 loss_minus=2.84285 g=-1.00544 b_rms=0.0224156 b_mean_abs=0.0178867 b_max_abs=0.119739 step_time_ms=38197.6
+step=282 loss_plus=2.55103 loss_minus=2.25848 g=14.6274 b_rms=0.0224274 b_mean_abs=0.0178959 b_max_abs=0.119696 step_time_ms=26306.8
+step=283 loss_plus=2.62239 loss_minus=3.05603 g=-21.6816 b_rms=0.0224532 b_mean_abs=0.0179163 b_max_abs=0.119097 step_time_ms=42190.9
+step=284 loss_plus=2.27497 loss_minus=2.8116 g=-26.8315 b_rms=0.0224928 b_mean_abs=0.0179481 b_max_abs=0.120148 step_time_ms=31815.3
+step=285 loss_plus=2.06114 loss_minus=2.12986 g=-3.43576 b_rms=0.0224935 b_mean_abs=0.0179487 b_max_abs=0.120054 step_time_ms=51394
+step=286 loss_plus=2.04086 loss_minus=2.18595 g=-7.25459 b_rms=0.0224964 b_mean_abs=0.0179511 b_max_abs=0.119739 step_time_ms=26958.4
+step=287 loss_plus=2.89764 loss_minus=2.55005 g=17.3795 b_rms=0.0225132 b_mean_abs=0.0179642 b_max_abs=0.120607 step_time_ms=25259.3
+step=288 loss_plus=2.4464 loss_minus=2.60674 g=-8.01687 b_rms=0.0225164 b_mean_abs=0.0179669 b_max_abs=0.121169 step_time_ms=38709.1
+step=289 loss_plus=2.38188 loss_minus=1.96123 g=21.0325 b_rms=0.022542 b_mean_abs=0.0179877 b_max_abs=0.121153 step_time_ms=35798.1
+step=290 loss_plus=2.8103 loss_minus=2.47446 g=16.792 b_rms=0.0225577 b_mean_abs=0.0179999 b_max_abs=0.121148 step_time_ms=36438.4
+step=291 loss_plus=2.20987 loss_minus=2.37623 g=-8.31817 b_rms=0.0225616 b_mean_abs=0.018003 b_max_abs=0.120869 step_time_ms=44659
+step=292 loss_plus=2.18455 loss_minus=1.7809 g=20.1828 b_rms=0.0225844 b_mean_abs=0.0180214 b_max_abs=0.120893 step_time_ms=27118.2
+step=293 loss_plus=3.3673 loss_minus=3.31083 g=2.82351 b_rms=0.022585 b_mean_abs=0.0180218 b_max_abs=0.120774 step_time_ms=44257.5
+step=294 loss_plus=2.22575 loss_minus=1.65092 g=28.7416 b_rms=0.0226308 b_mean_abs=0.0180584 b_max_abs=0.120883 step_time_ms=30949.8
+step=295 loss_plus=1.79511 loss_minus=2.23072 g=-21.7802 b_rms=0.0226572 b_mean_abs=0.0180795 b_max_abs=0.121611 step_time_ms=28556.6
+step=296 loss_plus=3.93529 loss_minus=3.96592 g=-1.53124 b_rms=0.0226573 b_mean_abs=0.0180797 b_max_abs=0.121633 step_time_ms=48103
+step=297 loss_plus=2.71745 loss_minus=2.7512 g=-1.68709 b_rms=0.0226575 b_mean_abs=0.0180798 b_max_abs=0.121611 step_time_ms=40275.9
+step=298 loss_plus=1.78909 loss_minus=1.86413 g=-3.75228 b_rms=0.0226584 b_mean_abs=0.0180806 b_max_abs=0.121519 step_time_ms=53622.3
+step=299 loss_plus=2.34067 loss_minus=1.63974 g=35.0465 b_rms=0.0227268 b_mean_abs=0.018135 b_max_abs=0.122491 step_time_ms=60672.3
+step=300 loss_plus=2.94959 loss_minus=2.93791 g=0.58385 b_rms=0.0227268 b_mean_abs=0.018135 b_max_abs=0.122517 step_time_ms=47406.2
+speed_pp=3.000
+avg_step_time_ms=37034.462
+peak_memory_mb=5997.586
+peak_pss_memory_mb=5973.730
