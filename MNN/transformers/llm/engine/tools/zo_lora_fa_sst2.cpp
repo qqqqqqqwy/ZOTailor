@@ -56,6 +56,7 @@ struct Args {
     std::string bStorageLayout = "mnn";
     int attentionMode = 8;
     bool forceFloatWeight = false;
+    bool compactNormalWeight = true;
     bool verbose = false;
     bool debugMNN = false;
     bool diagZoCheck = false;
@@ -1184,6 +1185,7 @@ static void printUsage(const char* argv0) {
               << "  [--precision low|normal|high] [--memory low|normal|high] [--b-param-precision fp16|fp32]\n"
               << "  [--b-storage-layout mnn|ggml]\n"
               << "  [--attention-mode 8] [--force-float-weight true|false]\n"
+              << "  [--compact-normal-weight true|false]\n"
               << "  [--verbose] [--debug_MNN true|false] [--diag-zo-check]\n"
               << "  [--diag-repeat N] [--diag-b-readback] [--baseline-step N]\n"
               << "  [--diag-isolate-b N] [--diag-isolate-value 0.1]\n"
@@ -1217,6 +1219,8 @@ static void printUsage(const char* argv0) {
               << "    mask fast path and materializes the full lower-triangular mask\n"
               << "    --force-float-weight true expands quantized CPU weights to float\n"
               << "    at load time, avoiding direct quant-weight GEMM for slower runs\n"
+              << "    --compact-normal-weight true keeps Q4 normal-memory CPU weights\n"
+              << "    packed while preserving the normal quant GEMM executor path\n"
               << "    --memory low|normal lets quantized CPU weights stay packed;\n"
               << "    --memory high expands more weights unless --force-float-weight changes it\n";
 }
@@ -1293,6 +1297,10 @@ static bool parseArgs(int argc, const char* argv[], Args* args) {
         } else if (key == "--force-float-weight") {
             if (value == nullptr || !parseBoolValue(value, &args->forceFloatWeight)) {
                 return fail("--force-float-weight must be true or false");
+            }
+        } else if (key == "--compact-normal-weight") {
+            if (value == nullptr || !parseBoolValue(value, &args->compactNormalWeight)) {
+                return fail("--compact-normal-weight must be true or false");
             }
         } else if (key == "--verbose") {
             args->verbose = true;
@@ -3381,7 +3389,8 @@ static int resolveThreadCount(int threads) {
 
 static std::string runtimeConfigJson(int threads, const std::string& precision, const std::string& memory,
                                      int attentionMode, bool enableDebug,
-                                     bool forceFullCausalMask, bool forceFloatWeight, bool mixedFp32Attention) {
+                                     bool forceFullCausalMask, bool forceFloatWeight,
+                                     bool compactNormalWeight, bool mixedFp32Attention) {
     std::ostringstream os;
     // memory=high avoids MNN's KleidiAI / quant-weight paths for the
     // convergence-sensitive FP16 baseline. Passing memory=low/normal is useful
@@ -3405,6 +3414,7 @@ static std::string runtimeConfigJson(int threads, const std::string& precision, 
        << "\"use_template\":false,"
        << "\"force_full_causal_mask\":" << (forceFullCausalMask ? "true" : "false") << ","
        << "\"force_float_weight\":" << (forceFloatWeight ? "true" : "false") << ","
+       << "\"compact_normal_weight\":" << (compactNormalWeight ? "true" : "false") << ","
        << "\"mixed_fp32_attention\":" << (mixedFp32Attention ? "true" : "false") << ","
        << "\"mixed_fp32_attention_context\":" << (mixedFp32Attention ? "true" : "false") << ","
        << "\"enable_debug\":" << (enableDebug ? "true" : "false")
@@ -3665,6 +3675,7 @@ int main(int argc, const char* argv[]) {
                   << " runtime_memory=" << args.runtimeMemory
                   << " force_full_causal_mask=" << (args.forceFullCausalMask ? "true" : "false")
                   << " force_float_weight=" << (args.forceFloatWeight ? "true" : "false")
+                  << " compact_normal_weight=" << (args.compactNormalWeight ? "true" : "false")
                   << " debug_MNN=" << (args.debugMNN ? "true" : "false") << "\n";
         std::cerr << "diag_repeat=" << args.diagRepeat
                   << " diag_b_readback=" << (args.diagBReadback ? "true" : "false")
@@ -3690,7 +3701,8 @@ int main(int argc, const char* argv[]) {
     const bool enableMnnDebugRuntime = args.debugMNN || args.diagLayerwise > 0 || anyDiagLora;
     llm->set_config(runtimeConfigJson(runtimeThreads, args.precision, args.runtimeMemory,
                                       args.attentionMode, enableMnnDebugRuntime,
-                                      args.forceFullCausalMask, args.forceFloatWeight, mixedFp32Attention));
+                                      args.forceFullCausalMask, args.forceFloatWeight,
+                                      args.compactNormalWeight, mixedFp32Attention));
 
     MnnActivationDebugState activationDebug;
     if (enableMnnDebugRuntime) {

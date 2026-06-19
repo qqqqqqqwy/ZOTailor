@@ -42,6 +42,7 @@ class CPUConvolution : public Execution {
 public:
     struct ResourceDequantizeInfo {
         int bits = 32;
+        bool compactInt4 = false;
         std::shared_ptr<Tensor> mScaleBias;
     };
     struct Resource {
@@ -55,6 +56,7 @@ public:
         int lU;
         int lP;
         int hP;
+        int srcChannel = 0;
         std::vector<float> mReluThreshold;
     };
     struct ResourceInt8 {

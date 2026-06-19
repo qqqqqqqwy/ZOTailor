@@ -31,6 +31,7 @@ public:
     static PerfConfig bestTileConvolutionConfig(const Convolution2DCommon *common, const Tensor *inputTensor,
                                           const Tensor *outputTensor, int threadNumber, Backend* b);
 protected:
+    Tensor mTempCompactInt4Unpack;
 };
 class DenseConvolutionTiledExecutor : public ConvolutionTiledExecutor {
 public:
@@ -48,7 +49,7 @@ public:
                                           const Tensor *outputTensor, int threadNumber, Backend* b) {
         return DenseConvolutionTiledImpl::bestTileConvolutionConfig(common, inputTensor, outputTensor, threadNumber, b);
     }
-    static bool initQuantizeResource(std::shared_ptr<ConvolutionCommon::Int8Common> int8Info, std::shared_ptr<CPUConvolution::Resource> resource, int hU, int hP, int lU, int lP, int outputCount, int srcChannel, int kernelSize, int bytes);
+    static bool initQuantizeResource(std::shared_ptr<ConvolutionCommon::Int8Common> int8Info, std::shared_ptr<CPUConvolution::Resource> resource, int hU, int hP, int lU, int lP, int outputCount, int srcChannel, int kernelSize, int bytes, bool compactInt4);
     static void selectLowMemoryMatmulFunc(lowMemoryMatmulUnit* matmulUnit, lowMemoryMatmulRemain* matmulRemain, float* weightBytes, int32_t weightQuantBits, const CoreFunctions* core);
     struct DequantizeCache {
         std::shared_ptr<MNN::Tensor> weight;

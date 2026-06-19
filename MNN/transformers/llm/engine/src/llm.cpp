@@ -280,6 +280,7 @@ void Llm::setRuntimeHint(std::shared_ptr<Express::Executor::RuntimeManager> &rtg
     rtg->setExternalPath(mConfig->npu_model_dir(), MNN::Interpreter::EXTERNAL_NPU_FILE_DIR);
     rtg->setHint(MNN::Interpreter::DYNAMIC_QUANT_OPTIONS, mConfig->config_.value("dynamic_option", 0));
     rtg->setHint(MNN::Interpreter::CPU_FORCE_FLOAT_WEIGHT, mConfig->config_.value("force_float_weight", false) ? 1 : 0);
+    rtg->setHint(MNN::Interpreter::CPU_COMPACT_NORMAL_WEIGHT, mConfig->config_.value("compact_normal_weight", false) ? 1 : 0);
 
     rtg->setHintPtr(Interpreter::KVCACHE_INFO, mMeta.get());
     if (backend_type_convert(mConfig->backend_type()) != 0) { // not cpu

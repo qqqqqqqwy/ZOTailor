@@ -124,6 +124,9 @@ void Session::ModeGroup::setHint(Interpreter::HintMode hint, int value) {
         case Interpreter::CPU_FORCE_FLOAT_WEIGHT:
             runtimeHint.forceFloatWeight = value > 0 ? true : false;
             break;
+        case Interpreter::CPU_COMPACT_NORMAL_WEIGHT:
+            runtimeHint.compactNormalWeight = value > 0 ? true : false;
+            break;
         default:
             break;
     }

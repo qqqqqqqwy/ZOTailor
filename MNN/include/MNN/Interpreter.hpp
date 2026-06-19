@@ -267,7 +267,10 @@ public:
         CPU_SME_CORES = 18,
 
         // Force quantized weights to be expanded to float weights on CPU.
-        CPU_FORCE_FLOAT_WEIGHT = 19
+        CPU_FORCE_FLOAT_WEIGHT = 19,
+
+        // Keep normal-memory Q4 CPU weights compact while preserving the normal executor path.
+        CPU_COMPACT_NORMAL_WEIGHT = 20
     };
 
     enum ExternalPathType {

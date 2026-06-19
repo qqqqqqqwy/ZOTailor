@@ -74,6 +74,7 @@ struct RuntimeHint {
     bool enableKleidiAI = false;
 #endif
     bool forceFloatWeight = false;
+    bool compactNormalWeight = false;
     // Use CPU Ids
     std::vector<int> cpuIds;
 
